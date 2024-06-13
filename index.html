@@ -10,28 +10,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
     <link rel="stylesheet" href="styles.css">
     <title>Prabha Agencies</title>
 </head>
 
 <body>
-    <header>
-        <div class="navbar">
-            <a href="" style="font-weight: 800; text-decoration: underline;">Prabha Agencies</a>
-            <a href="#about-us">ABOUT US</a>
-            <a href="#what-we-offer">WHAT WE OFFER</a>
-            <a href="#portfolio">PORTFOLIO</a>
-            <a href="#contact-us">CONTACT US</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Prabha Agencies</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-us">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#what-we-offer">What We Offer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Our Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-us">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
 
     <section id="intro-header">
-        <div class="container">
+        <div class="test">
             <div class="center-text">
                 <p>Build your <b style="font-size: larger;"><u>brand</u></b> in the Indian market with Prabha Agencies
                 </p>
-                <a href="#what-we-offer">Learn More</a>
-                <a href="#contact-us">Contact Us</a>
+                <button type="button" class="btn btn-light"><a href="#what-we-offer">Learn More</a></button>
+                <button type="button" class="btn btn-light"><a href="#contact-us">Contact Us</a></button>
             </div>
         </div>
         <p>We help grow your <b>business</b>, establish your <b>brand</b> and put our <u>clients
@@ -93,6 +113,7 @@
         </div>
     </div>
     <hr>
+
     <section id="what-we-offer" class="condensed">
         <h1>What We Offer</h1>
         <div class="services-list">
@@ -228,16 +249,20 @@
             </div>
         </div>
     </section>
+
     <hr>
     <section id="portfolio" class="condensed">
         <h1>Portfolio</h1>
         <p>
             For over 30 years, Prabha Agencies has been a leading distributor of premium cosmetics. We curate a
-            diverse portfolio of innovative and high-quality brands, meticulously chosen for their effectiveness,
+            diverse portfolio of innovative and high-quality brands, meticulously chosen for their
+            effectiveness,
             ingredient integrity, and brand values.
 
-            We have a proven track record of success, helping our clients achieve significant growth through strategic
-            partnerships and exceptional service. We offer competitive pricing, efficient logistics, and dedicated
+            We have a proven track record of success, helping our clients achieve significant growth through
+            strategic
+            partnerships and exceptional service. We offer competitive pricing, efficient logistics, and
+            dedicated
             account management to ensure your success.
         </p>
         <h3>Prabha Agencies</h3>
@@ -251,7 +276,8 @@
     <section id="contact-us" class="condensed">
         <h1>Contact Us</h1>
         <p>Let <b>Prabha Agencies</b> help you grow your business.</p>
-        <p>Let's schedule a consultation today to discuss how we can help your business thrive in the ever-changing
+        <p>Let's <b>schedule a consultation today</b> to discuss how we can help your business thrive in the
+            ever-changing
             marketplace.</p>
     </section>
     <a class="email condensed" href="mailto: info@prabhaglobaltrade.com ?subject= Hello">
@@ -268,9 +294,13 @@
 <script>
     const button = document.querySelector(".email");
 
-    setInterval(() => {
-        button.classList.toggle('fade');
-    }, 1000);
+    // setInterval(() => {
+    //     button.classList.toggle('fade');
+    // }, 1000);
 
 
 </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>

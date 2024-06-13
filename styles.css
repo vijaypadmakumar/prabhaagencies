@@ -11,7 +11,7 @@ body {
 }
 
 hr {
-    width: 80%;
+    width: 100%;
     height: 3px;
     background: rgb(238,174,202);
     background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
@@ -23,28 +23,12 @@ h1 {
     font-size: xxx-large;
 }
 
+nav {
+    border-radius: 10px;
+}
+
 .condensed {
     margin: 10px 200px;
-}
-
-/* navbar */
-
-header .navbar {
-    text-align: center;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: auto;
-    /* border: 2px solid gray; */
-    border-bottom: 2px solid gray;
-    /* border-radius: 5px; */
-    padding: 15px;
-    position: sticky;
-}
-
-header .navbar a {
-    text-decoration: none;
-    color: black;
-    font-size: smaller;
 }
 
 /* intro header */
@@ -58,20 +42,18 @@ header .navbar a {
     font-size: xxx-large;
 }
 
-#intro-header .container {
+#intro-header .test {
     position: relative;
     text-align: center;
-    width: fit-content;
-    height: fit-content;
     margin: 0px;
     width: 100%;
-    height: 700px;
+    height: 750px;
     border-radius: 10px;
     background: rgb(238,174,202);
-background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 
-#intro-header .container .center-text {
+#intro-header .test .center-text {
     font-size: xxx-large;
     color: white;
     position: absolute;
@@ -80,14 +62,10 @@ background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 1
     transform: translate(-50%, -50%);
 }
 
-#intro-header .container .center-text a {
+#intro-header .test .center-text a {
     color: black;
     text-decoration: none;
-    font-weight: 500;
-    font-size: large;
-    border-radius: 10px;
-    padding: 10px;
-    background: white;
+ 
 }
 
 /* ------------ */
@@ -114,13 +92,6 @@ background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 1
     grid-template-rows: auto;
 }
 
-#about-us {
-}
-
-/* ------------- */
-
-/* our-vision */
-
 
 /* ------------- */
 
@@ -135,7 +106,7 @@ background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 1
 }
 
 #what-we-offer .services-list .service-desc {
-    /* padding: 20px; */
+    padding: 20px;
     margin: 0 20px 20px 0;
     box-shadow: 0 8px 20px rgba(10,10,10, 0.08);
     background-color: rgba(200,200,200,0);
@@ -151,22 +122,20 @@ background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 1
     font-weight: 700;
     font-size: larger;
 }
-
-#what-we-offer .services-list .service-desc .desc {
+    what-we-offer .services-list .service-desc .desc {
     text-align:justify;
     line-height: 25px;
-    /* border: 2px solid; */
+    border: 2px solid;
 }
-
 
 /* ----------- */
 
 /* portfolio */
 
-#portfolio img{
-width: 100%;
-box-shadow: 0 8px 20px rgba(10,10,10, 0.05);
-border-radius: 20px;
+#portfolio img {
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(10,10,10, 0.05);
+    border-radius: 20px;
 }
 
 /* ----------- */
@@ -189,9 +158,9 @@ border-radius: 20px;
     padding: 20px;
 }
 
-.fade {
+/* .fade {
     padding: 17px;
-}
+} */
 
 /* footer */
 
@@ -205,7 +174,23 @@ footer {
 
 @media only screen and (max-width: 800px) {
     /* TODO: adjust font size */
+    #intro-header .test .center-text p {
+        font-size: 30px;
+    }
+
+    #intro-header .test p {
+        font-size: 30px;
+    }
+
     .condensed {
         margin: 0px;
     }    
+
+    #what-we-offer .services-list {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        padding: 10px;
+        
+    }
 }
