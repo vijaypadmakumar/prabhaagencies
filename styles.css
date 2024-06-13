@@ -5,7 +5,7 @@ html {
 body {
     margin: 10px;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", Arial, Helvetica;
     font-size: large;
 }
 
@@ -18,8 +18,12 @@ hr {
     border-radius: 20px;
 }
 
+h1 {
+    font-size: xxx-large;
+}
+
 .condensed {
-    margin: 0px 250px;
+    margin: 0px 200px;
 }
 
 /* navbar */
@@ -33,12 +37,13 @@ header .navbar {
     border-bottom: 2px solid gray;
     /* border-radius: 5px; */
     padding: 15px;
-    
+    position: sticky;
 }
 
 header .navbar a {
     text-decoration: none;
     color: black;
+    font-size: smaller;
 }
 
 /* intro header */
@@ -86,8 +91,38 @@ background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 1
 
 /* ------------ */
 
+.grid {
+    text-align: justify;
+}
+
+.grid .grid-box {
+    /* border: 2px solid rgba(10,10,10, 0.1); */
+    /* padding: 20px; */
+    margin: 10px;
+    border-radius: 70px 0 70px 0;
+}
+
+.grid .row-1 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+}
+
+.grid .row-2 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
 #about-us {
 }
+
+/* ------------- */
+
+/* our-vision */
+
+
+/* ------------- */
 
 /* what-we-offer */
 
@@ -102,7 +137,7 @@ background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 1
 #what-we-offer .services-list .service-desc {
     /* padding: 20px; */
     margin: 0 20px 20px 0;
-    box-shadow: 0cm 10px 20px rgba(200,200,200,0.5);
+    box-shadow: 0 8px 20px rgba(10,10,10, 0.08);
     background-color: rgba(200,200,200,0);
     border-radius: 10px;
     padding: 15px;
@@ -113,7 +148,8 @@ background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 1
     margin-right: 5px;
     text-align: center;
     margin-bottom: 10px;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: larger;
 }
 
 #what-we-offer .services-list .service-desc .desc {
@@ -129,6 +165,32 @@ background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 1
 
 #portfolio img{
 width: 100%;
+box-shadow: 0 8px 20px rgba(10,10,10, 0.05);
+border-radius: 20px;
+}
+
+/* ----------- */
+
+/* Contact us */
+
+.email {
+    background-color: #0d6efd;
+    border: none;
+    border-radius: 3px;
+    padding: 15px;
+    font-size: larger;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: padding 400ms ease;
+}
+
+.email:hover {
+    padding: 20px;
+}
+
+.fade {
+    padding: 17px;
 }
 
 /* footer */
@@ -142,7 +204,8 @@ footer {
 /* ------------ */
 
 @media only screen and (max-width: 800px) {
-    section {
+    /* TODO: adjust font size */
+    .condensed {
         margin: 0px;
     }    
 }
